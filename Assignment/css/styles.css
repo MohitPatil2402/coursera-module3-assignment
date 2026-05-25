@@ -1,0 +1,140 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  border-radius: 0;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Mobile dropdown menu styles */
+.navbar-nav.visible-xs {
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.navbar-nav.visible-xs li {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav.visible-xs li:last-child {
+  border-bottom: none;
+}
+
+.navbar-nav.visible-xs li a {
+  padding: 15px 0;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav.visible-xs li a:hover {
+  background-color: #e7e7e7;
+}
+
+/* Dropdown menu full width */
+.navbar-collapse {
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+}
+
+/* REQUIRED GRADED PORTION - Tall section */
+.tall-section {
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  min-height: 1000px;
+}
+
+.tall-section h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tall-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* OPTIONAL UNGRADED PORTION - Three sections */
+.optional-section {
+  margin-top: 40px;
+}
+
+.menu-section {
+  background-color: #e8e8e8;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  min-height: 500px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-section h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+}
+
+.menu-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #5bc0de;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #31b0d5;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-section {
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-section {
+    min-height: auto;
+  }
+  
+  .tall-section {
+    min-height: 800px;
+  }
+}
